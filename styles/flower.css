@@ -176,6 +176,89 @@ body{
    margin-top: -80px;
 }
 
+
+/* Latest Deals Section */
+.latest-deals-title{
+   font-size: 3.125rem;
+   font-weight: 700;
+   margin-bottom: 0px;
+   text-align: center;
+}
+.latest-deals-description{
+   font-weight: 1.375rem;
+   color: rgba(0, 0, 0, 0.50);
+   text-align: center;
+
+   width: calc(100% - 552px);
+   margin: 16px auto 120px auto;
+}
+.latest-deals-image-container{
+   max-width: 1140px;
+   display: flex;
+   justify-content: space-between;
+
+   margin: 120px auto;
+}
+
+.vertical-deals-image{
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+
+}
+#bloom-plant, #ana-plant{
+   width: 367px;
+   height: 206.5px;
+   border-radius: 22px;
+}
+#bloom-plant{
+   background-image: url(../images/deal-bloom.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#ana-plant{
+   background-image: url(../images/deal-ana.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.zabo{
+   background-image: url(../images/deal-zabo.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   width: 753px;
+   border-radius: 22px;
+}
+
+
+.latest-deals-image{
+   display: flex;
+   flex-direction: column;
+   gap: 19px;
+   justify-content: center;
+   align-items: center;
+}
+.latest-deals-image-title{
+   color: white;
+   font-size: 1.25rem;
+   font-weight: 700;
+   margin-bottom: 0px;
+}
+.latest-deals-image-container a{
+   color: white;
+   font-weight:600;
+}
+.zabo h3{
+   color: white;
+   font-size: 3.125rem;
+   font-weight: 700;
+}
+.zabo a{
+   font-size: 1.75rem;
+   font-weight: 600;
+   color: white;
+}
+
 /* responsive design for mobile device */
 @media screen and (max-width: 576px) {
    .nav{
@@ -243,5 +326,34 @@ body{
    }
    .trusted-badge{
       display: none;
+   }
+   
+
+   .latest-deals-title{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+   }
+   .latest-deals-description{
+      width: calc(100% - 57px);
+      margin: 16px auto 50px auto;
+      text-align: center;
+   }
+   .latest-deals-image-container{
+      flex-direction: column;
+      gap: 25px;
+      width: calc(100% - 30px);
+      margin: 50px auto 40px auto;
+   }
+   .zabo{
+      width: 367px;
+      height: 206.5px;
+   }
+   .latest-deals-image h3{
+      font-size: 1.25rem;
+   }
+   .latest-deals-image a{
+      font-size: 1rem;
    }
 }
